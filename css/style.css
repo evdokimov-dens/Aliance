@@ -73,7 +73,7 @@ position: relative;
 .header-nav-link {
   text-decoration: none;
   font-size: 16px;
-  margin-right: 50px;
+  margin-right: 53px;
   color: inherit;
 }
 .header-phone {
@@ -102,6 +102,7 @@ position: relative;
 .navbar-button {
   flex-shrink: 0;
   height: 100%;
+  padding: 25px 45px;
 }
 .seporator {
   background: #5c8ee6;
@@ -119,7 +120,9 @@ position: relative;
   font-family: 'BebasNeueBook';
   font-size: 80px;
   line-height: 120%;
-  margin: 30px 0;
+  margin: 24px 12px;
+  letter-spacing: 0.6px;
+  word-spacing: -2.3px;
 }
 .header-text {
   max-width: 720px;
