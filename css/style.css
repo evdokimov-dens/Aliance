@@ -13,6 +13,9 @@ html {
 body {
   font-family: "Noto Sans", sans-serif;
 }
+.mobile-menu {
+  display: none;
+}
 .container {
   max-width: 90rem;
   margin: auto;
@@ -322,5 +325,87 @@ body {
   .navbar-button .button-icon {
     display: block;
     fill: #ffffff;
+  }
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 2;
+    background-color: #fff;
+    padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .mobile-menu.is-open {
+    display: block;
+  }
+  .mobile-menu-nav {
+    list-style: none;
+    padding: 0;
+  }
+  .mobile-menu-nav-item {
+    margin-bottom: 2rem;
+  }
+  .mobile-menu-link {
+    text-decoration: none;
+    color: #292d33;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 160%;
+  }
+  .mobile-submenu {
+    list-style: none;
+    padding: 0;
+    padding-left: 1rem;
+    margin-top: 1rem;
+  }
+  .mobile-submenu-link {
+    text-decoration: none;
+    color: #828a99;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  .mobile-phone {
+    display: block;
+    color: #292d33;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    border-top: 1px solid #ebebf0;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .mobile-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mobile-info-address,
+  .mobile-info-email {
+    text-decoration: none;
+    color: #292d33;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  .mobile-info-social {
+    display: inline-block;
+    margin-top: 1.3rem;
+  }
+  .social-icon-inst {
+    margin-left: 1rem;
   }
 }
