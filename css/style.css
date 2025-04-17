@@ -166,6 +166,7 @@ body {
 }
 .header-features-item {
   padding: 1.75rem 3.125rem;
+  min-height: 100%;
   width: 18rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
@@ -417,5 +418,27 @@ body {
   }
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-9px);
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 40rem;
+  }
+  .header-title {
+    font-size: 4rem;
+  }
+  .header-content {
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .header-title {
+    font-size: 2rem;
+  }
+  .header-content {
+    padding-top: 2rem;
   }
 }
