@@ -462,6 +462,11 @@ body {
   max-width: 100%;
   width: 4.375rem;
   height: 4.375rem;
+  filter: grayscale(100%);
+}
+.clients-logo:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
 }
 @media (max-width: 1700px) {
   html {
