@@ -463,10 +463,10 @@ body {
   width: 4.375rem;
   height: 4.375rem;
   filter: grayscale(100%);
+  transition: filter 0.2s;
 }
 .clients-logo:hover {
   filter: grayscale(0%);
-  cursor: pointer;
 }
 @media (max-width: 1700px) {
   html {
