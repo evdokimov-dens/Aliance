@@ -290,20 +290,23 @@ body {
 .button-link:hover::before {
   width: 60px;
 }
-.steps-buttons {
-  display: none;
-  height: 40px;
+.primary-buttons-wrapper {
+  display: flex;
+  height: 60px;
   justify-content: flex-end;
 }
-.steps-button-prev,
-.steps-button-next {
+.primary-button-prev,
+.primary-button-next {
   background: #5c8ee5;
   height: 100%;
-  width: 60px;
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.steps-buttons {
+  display: none;
 }
 .cards {
   display: flex;
@@ -468,6 +471,12 @@ body {
 .clients-logo:hover {
   filter: grayscale(0%);
 }
+.blog-slider-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1.875rem;
+  justify-content: space-between;
+}
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -512,6 +521,13 @@ body {
   }
   .steps-buttons {
     display: flex;
+  }
+  .primary-buttons-wrapper {
+    height: 2.5rem;
+  }
+  .primary-button-prev,
+  .primary-button-next {
+    width: 3.75rem;
   }
   .card {
     flex-basis: 50%;

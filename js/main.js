@@ -87,3 +87,12 @@ const swiper = new Swiper(".features-slider", {
     },
   },
 });
+
+const swiperBlog = new Swiper(".blog-slider", {
+  speed: 400,
+  slidesPerView: 2,
+  navigation: {
+    nextEl: ".blog-button-next",
+    prevEl: ".blog-button-prev",
+  },
+});
