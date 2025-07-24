@@ -494,7 +494,6 @@ body {
   width: 50%;
 }
 .cta-form-wrapper {
-  max-width: 90%;
   display: flex;
   justify-content: flex-end;
 }
@@ -570,6 +569,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: 1.875rem;
+  margin-bottom: 6.25rem;
 }
 .cta-form-button {
   flex-shrink: 0;
@@ -591,6 +591,42 @@ body {
   font-weight: 400;
   line-height: 160%;
   margin: 0;
+}
+.footer-top {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-logo {
+  width: 12.5rem;
+  height: 3.75rem;
+}
+.footer-info {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+  color: #292d33;
+  gap: 0.625rem;
+}
+.footer-info-address,
+.footer-info-email {
+  font-style: inherit;
+  text-decoration: inherit;
+  color: inherit;
+}
+.footer-phone {
+  color: #292d33;
+  font-family: "Noto Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+.footer-social {
+  text-decoration: none;
 }
 @media (max-width: 1700px) {
   html {
