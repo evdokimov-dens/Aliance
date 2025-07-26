@@ -625,8 +625,61 @@ body {
   font-weight: 600;
   line-height: 160%;
 }
-.footer-social {
+.footer-social-link {
   text-decoration: none;
+}
+.footer-seporator {
+  color: #ebebf0;
+  opacity: 0.5;
+}
+.footer-buttom {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.footer-menu-title {
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+  color: #292d33;
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+.footer-menu-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+.footer-menu-column-2 {
+  columns: 20rem auto;
+  min-width: 50rem;
+}
+.footer-menu-link {
+  text-decoration: none;
+  color: #828a99;
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  display: block;
+  margin-bottom: 0.9375rem;
+}
+.footer-menu-link-bold {
+  color: #292d33;
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 1.875rem;
+}
+.footer-buttom {
+  display: flex;
+}
+.footer-menu-wrapper:last-child {
+  margin-left: 5rem;
 }
 @media (max-width: 1700px) {
   html {
