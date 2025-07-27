@@ -630,7 +630,7 @@ body {
 }
 .footer-seporator {
   color: #ebebf0;
-  opacity: 0.5;
+  background-color: #ebebf0;
 }
 .footer-buttom {
   padding-top: 3.125rem;
@@ -680,6 +680,27 @@ body {
 }
 .footer-menu-wrapper:last-child {
   margin-left: 5rem;
+}
+.footer-wrapper {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #828a99;
+  font-style: normal;
+}
+.footer-wrapper,
+.footer-legal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.footer-copyright,
+.footer-policy {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: inherit;
 }
 @media (max-width: 1700px) {
   html {
