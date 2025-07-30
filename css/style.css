@@ -724,12 +724,19 @@ body {
   visibility: visible;
   opacity: 1;
 }
+.modal.is-open .modal-dialog {
+  transform: translateY(0);
+  opacity: 1;
+}
 .modal-dialog {
   background-color: #fff;
   margin: auto;
   max-width: 28.75rem;
   padding: 2.5rem 3.125rem;
   position: relative;
+  transform: translateY(-10%);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
 }
 .modal-close {
   display: block;
@@ -767,6 +774,14 @@ body {
 }
 .modal-input-label {
   background-color: #fff;
+}
+.modal-form-footer {
+  margin-top: 1.875rem;
+}
+.modal-form-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 1700px) {
   html {
