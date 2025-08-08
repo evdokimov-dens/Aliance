@@ -154,13 +154,14 @@
         </svg>
         </a>
         <p class="modal-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-        <form action="#" class="modal-form">
+        <form action="handler.php" method="POST" class="modal-form">
           <div class="input-group-wrapper input-group-vertical">
               <div class="input-group modal-input-group">
                 <input 
                 id="modal-user-name" 
                 type="text" 
-                class="input modal-input" 
+                class="input modal-input"
+                name="username"
                 placeholder=" " 
                 />
                 <label class="input-group-label modal-input-label" for="modal-user-name"">Имя</label>
@@ -170,7 +171,8 @@
                 <input 
                 id="modal-user-phone" 
                 type="tel" 
-                class="input modal-input" 
+                class="input modal-input"
+                name="userphone"
                 placeholder=" "
                 />
                 <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label>
@@ -198,5 +200,6 @@
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/just-validate.production.min.js"></script>
   </body>
 </html>
