@@ -142,5 +142,8 @@ forms.forEach((form) => {
         rule: "required",
         errorMessage: "Укажите телефон",
       },
-    ]);
+    ])
+    .onSuccess((event) => {
+      console.log(event.target.getAttribute("method"));
+    });
 });
