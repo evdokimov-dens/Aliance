@@ -26,7 +26,7 @@
                 <input 
                 id="user-phone" 
                 type="tel" 
-                class="input" 
+                class="input phone-mask" 
                 name="userphone" 
                 placeholder=" "
                 maxlength="15"
