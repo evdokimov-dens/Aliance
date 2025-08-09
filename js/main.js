@@ -145,13 +145,18 @@ forms.forEach((form) => {
     ])
     .onSuccess((event) => {
       const thisForm = event.target; // наша форма
-      const formData = new formData(thisForm); // данные из нашей формы
+      const formData = new FormData(thisForm); // данные из нашей формы
       const ajaxSend = (formData) => {
         fetch(thisForm.getAttribute("action"), {
           method: thisForm.getAttribute("method"),
           body: formData,
         }).then((response) => {
-          console.log(response);
+          if (response.ok) {
+            thisForm.reset();
+            alert("Форма отправлена!");
+          } else {
+            alert("Ошибка. Текст ошибки: ".response.statusText);
+          }
         });
       };
       ajaxSend(formData);
