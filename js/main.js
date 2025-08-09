@@ -101,24 +101,34 @@ const swiperBlog = new Swiper(".blog-slider", {
   },
 });
 
-const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal-dialog");
+let currentModal; // текущее модальное окно
+let modalDialog; // белове диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); // окно с предупреждением
 
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    (!event.composedPath().includes(modalDialog) && modal.classList.contains("is-open"))
-  ) {
-    event.preventDefault();
-    modal.classList.toggle("is-open");
-  }
+const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // переключатели модальных окон
+modalButtons.forEach((button) => {
+  /*клик по переключателю */
+  button.addEventListener("click", (event) => {
+    /*определяем текущее открытое окно */
+    currentModal = document.querySelector(button.dataset.target);
+  });
 });
-document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
-    modal.classList.toggle("is-open");
-  }
-});
+
+// document.addEventListener("click", (event) => {
+//   if (
+//     event.target.dataset.toggle == "modal" ||
+//     event.target.parentNode.dataset.toggle == "modal" ||
+//     (!event.composedPath().includes(modalDialog) && currentModal.classList.contains("is-open"))
+//   ) {
+//     event.preventDefault();
+//     currentModal.classList.toggle("is-open");
+//   }
+// });
+// document.addEventListener("keyup", (event) => {
+//   if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+//     currentModal.classList.toggle("is-open");
+//   }
+// });
 
 const forms = document.querySelectorAll("form"); // Собираем формы
 forms.forEach((form) => {
