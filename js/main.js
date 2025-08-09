@@ -144,6 +144,16 @@ forms.forEach((form) => {
       },
     ])
     .onSuccess((event) => {
-      console.log(event.target.getAttribute("method"));
+      const thisForm = event.target; // наша форма
+      const formData = new formData(thisForm); // данные из нашей формы
+      const ajaxSend = (formData) => {
+        fetch(thisForm.getAttribute("action"), {
+          method: thisForm.getAttribute("method"),
+          body: formData,
+        }).then((response) => {
+          console.log(response);
+        });
+      };
+      ajaxSend(formData);
     });
 });
